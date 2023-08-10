@@ -55,7 +55,7 @@
             this.ageDataGridViewTextBoxColumn,
             this.typesDataGridViewTextBoxColumn,
             this.healthyDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.animalBindingSource;
+            this.dataGridView1.DataSource = this.animalBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(25, 185);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
@@ -152,7 +152,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "3111 정현진";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.animalBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.animalBindingSource1)).EndInit();

@@ -33,7 +33,7 @@ namespace NCMproject
             new Animal(){Name = "돌돌이", Age = 17, Types = "돌고래", Healthy = "건강" },
             new Animal(){Name = "이름이", Age = 9, Types = "쥐", Healthy = "아픔" },
             new Animal(){Name = "무명이", Age = 2, Types = "사슴", Healthy ="건강" },
-            new Animal(){Name = "레오나르도빚갚으리오", Age = 18, Types = "곰", Healthy = "아픔" },
+            new Animal(){Name = "레오나르도", Age = 18, Types = "곰", Healthy = "아픔" },
         };
 
         public Form1()
@@ -47,32 +47,22 @@ namespace NCMproject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            animalBindingSource.DataSource = from item in animalList
-                                             orderby item.Name descending
-                                             select item;
+            animalBindingSource.DataSource = from item in animalList orderby item.Name descending select item;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            animalBindingSource.DataSource = from item in animalList
-                                             where item.Age >= 10
-                                             orderby item.Age descending
-                                             select item;
+            animalBindingSource.DataSource = from item in animalList where item.Age >= 10 orderby item.Age descending select item;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            animalBindingSource.DataSource = from item in animalList
-                                             orderby item.Types descending
-                                             select item;
+            animalBindingSource.DataSource = from item in animalList orderby item.Types descending select item;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            animalBindingSource.DataSource = from item in animalList
-                                             where item.Healthy == "아픔"
-                                             orderby item.Types descending
-                                             select item;
+            animalBindingSource.DataSource = from item in animalList where item.Healthy == "아픔" orderby item.Types descending select item;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
